@@ -6,25 +6,36 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body style="background-image: url(img/background.png);background-size: cover;height: auto;width: 1200px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-        <div class="Head">
-                <div class="font-p">
-                    <h1>Đăng Nhập</h1>
+<body>
+        <div class="container">
+            <div class="left" style="height: 100%;">
+                <img src="img/background.png" style="background-size: cover;" alt="">
+            </div>
+            <div class="right">   
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
                 </div>
-                <div class="Infor">
-                    <div class="from-inf">
-                        <form action="Post">
-                            <p class="forminput">UserName</p>
-                            <input type="text" placeholder="Tên tài khoản">
-                            <p class="forminput">Password</p>
-                            <input type="text" placeholder="Mật khẩu">
-                        </form>
-                    </div>
-                    <div class="checkbox">
-                        <p><input type="checkbox" name="checkre" id="checkbox" checked> Nhớ mật khẩu ?</p>
-                    </div>
-                    <button class="Login">Login</button>
+                <div class="font-1">
+                    <h1>CMS/Login</h1>
                 </div>
+                <div class="form">
+                    <form action="Post">
+                        <p class="forminput">UserName</p>
+                        <input type="text" placeholder="Tên tài khoản">
+                        <p class="forminput">Password</p>
+                        <input type="password" placeholder="Mật khẩu">
+                    </form>
+                </div>
+                <div class="Event">
+                    <button>LOGIN</button>
+                    <a href="#">Forget Password ?</a>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
         </div>
+        <style>
+            
+            
+        </style>
 </body>
 </html>

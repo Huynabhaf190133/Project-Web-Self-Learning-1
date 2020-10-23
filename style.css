@@ -1,21 +1,17 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
 }
-.font-p
+.container 
 {
-    font-size: 60px;
-    color: crimson;
-    margin-left: 50%;
+  display: flex;
 }
-.Head .Infor .from-inf .forminput
-{
-    font-size: 20px;
-    color: aqua;
+.left {
+  flex: 3;
+  background-color: aqua;
 }
-.Infor
-{
-    margin-left: 50%;
+.right {
+  flex: 1;
+  background-color: white;
 }
