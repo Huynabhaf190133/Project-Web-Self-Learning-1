@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
     <title>Document</title>
 </head>
 <body>
         <div class="container">
-            <div class="left" style="height: 100%;">
-                <img src="img/background.png" style="background-size: cover;" alt="">
+            <div class="left">
+                <img src="" style="background-size: cover;" alt="">
             </div>
             <div class="right">   
                 <div class="logo">
                     <img src="img/logo.png" alt="">
                 </div>
                 <div class="font-1">
-                    <h1>CMS/Login</h1>
+                    <h1>CMS/LOGIN</h1>
                 </div>
                 <div class="form">
                     <form action="Post">
-                        <p class="forminput">UserName</p>
-                        <input type="text" placeholder="Tên tài khoản">
-                        <p class="forminput">Password</p>
-                        <input type="password" placeholder="Mật khẩu">
+                        <p class="username">UserName</p>
+                        <input class="user" type="text" placeholder="Tên tài khoản">
+                        <p class="password">Password</p>
+                        <input class="pass" type="password" placeholder="Mật khẩu">
                     </form>
+                    <div class="Event">
+                        <button>LOGIN</button>
+                        <p><a href="#">Forget Password ?</a></p>
+                        <a href="#">Sign Up</a>
+                        
+                    </div>
                 </div>
-                <div class="Event">
-                    <button>LOGIN</button>
-                    <a href="#">Forget Password ?</a>
-                    <a href="#">Sign Up</a>
-                </div>
+                
             </div>
         </div>
         <style>

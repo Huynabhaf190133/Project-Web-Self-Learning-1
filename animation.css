@@ -1,0 +1,15 @@
+@keyframes changecolor
+{
+    0%
+    {
+        color: aqua;
+    }
+    50%
+    {
+        color: cadetblue;
+    }
+    100%
+    {
+        color: yellow;
+    }
+}
