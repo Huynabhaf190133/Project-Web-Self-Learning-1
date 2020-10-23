@@ -6,8 +6,10 @@
 .container 
 {
   display: flex;
+  flex-direction: row;
 }
 .left {
+  flex-direction:column ;
   flex: 3;
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(115,191,140,1) 37%, rgba(152,190,114,1) 54%, rgba(253,187,45,1) 100%);
   background-color: aqua;
@@ -45,6 +47,9 @@
 .right .form form .user
 {
     margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 3px;
 }
 .right .form form .password
 {
@@ -54,7 +59,10 @@
 }
 .right .form form .pass
 {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 3px;
 }
 .Event button
 {
