@@ -1,0 +1,21 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.font-p
+{
+    font-size: 60px;
+    color: crimson;
+    margin-left: 50%;
+}
+.Head .Infor .from-inf .forminput
+{
+    font-size: 20px;
+    color: aqua;
+}
+.Infor
+{
+    margin-left: 50%;
+}
