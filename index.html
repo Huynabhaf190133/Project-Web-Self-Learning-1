@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="responsive.css">
     <title>Document</title>
-</head>
-<body>
-        <div class="container">
-            <div class="left" style="flex-direction: column;">
-                <img src="" style="background-size: cover;" alt="">
+  </head>
+  <body>
+    <div class="container" style="min-height: 100vh;">
+      <div class="left">
+        <h3>CMS $$ PLUS</h3>
+      </div>
+      <div class="right">
+        <div class="content-right">
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div class="font-1">
+            <h1>CMS/LOGIN</h1>
+          </div>
+          <div class="form">
+            <form action="Post" method="POST">
+              <p class="username">UserName</p>
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person icon-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+              </svg>
+              <input class="user" type="text" placeholder="Tên tài khoản" />
+              <p class="password">Password</p>
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-unlock-fill pass-word" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+                <path fill-rule="evenodd" d="M8.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+              </svg>
+              <input class="pass" type="password" placeholder="Mật khẩu" />
+            </form>
+            <div class="Event">
+              <button>LOGIN</button>
+              <p><a href="#">Forget Password ?</a></p>
+              <a href="#">Sign Up</a>
+              <br />
+              <br />
+              <h4>OR > Sign In</h4>
+              <br>
+              <h1>With</h1>
+              <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+              <a href=""><img src="img/gmail.png" alt=""></a>
             </div>
-            <div class="right" style="flex-direction: column;">   
-                <div class="logo">
-                    <img src="img/logo.png" alt="">
-                </div>
-                <div class="font-1">
-                    <h1>CMS/LOGIN</h1>
-                </div>
-                <div class="form">
-                    <form action="Post">
-                        <p class="username">UserName</p>
-                        <input class="user" type="text" placeholder="Tên tài khoản">
-                        <p class="password">Password</p>
-                        <input class="pass" type="password" placeholder="Mật khẩu">
-                    </form>
-                    <div class="Event">
-                        <button>LOGIN</button>
-                        <p><a href="#">Forget Password ?</a></p>
-                        <a href="#">Sign Up</a>
-                        <h4>OR ></h4>
-                    </div>
-                </div>
-                
-            </div>
+          </div>
+        </div> 
+      </div>
         </div>
-        <style>
-            
-            
-        </style>
-</body>
+  </body>
 </html>

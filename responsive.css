@@ -1,0 +1,35 @@
+@media (max-width: 1200px) { 
+    .left
+    {
+        display: block;
+    }
+    .logo img {
+        margin-left: 95px;
+        margin-top: 58px;
+        margin-bottom: 50px;
+      }
+      .font-1 h1 {
+        margin-left: 80px;
+        margin-bottom: 40px;
+        animation: changecolor 5s infinite;
+      }
+}
+@media (max-width: 576px) { 
+    .left
+    {
+        display: none;
+    }
+    .right .content-right
+    {
+        margin-left: 22px;
+    }
+    .right .content-right .logo img
+    {
+        position: absolute;
+        top: -50px;
+    }
+    .right .content-right .font-1 h1
+    {
+        margin-top: 23vh;
+    }
+ }

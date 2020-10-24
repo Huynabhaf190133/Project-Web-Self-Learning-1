@@ -1,15 +1,30 @@
-@keyframes changecolor
-{
-    0%
-    {
-        color: aqua;
-    }
-    50%
-    {
-        color: cadetblue;
-    }
-    100%
-    {
-        color: yellow;
-    }
+@keyframes changecolor {
+  0% {
+    color: aqua;
+  }
+  50% {
+    color: cadetblue;
+  }
+  100% {
+    color: yellow;
+  }
+}
+@keyframes colorlogo {
+  0% {
+    color: #ffff33;
+  }
+  30% {
+    color: #ccff33;
+  }
+  60% {
+    color: #ff9966;
+    transform: rotate(360deg);
+  }
+  80% {
+    color: #cc9966;
+    transform: scale(3);
+  }
+  100% {
+    color: #3333ff;
+  }
 }
