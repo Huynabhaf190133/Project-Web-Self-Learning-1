@@ -1,12 +1,12 @@
 @keyframes changecolor {
   0% {
-    color: aqua;
+    color: yellow;
   }
   50% {
-    color: cadetblue;
+    color: blue;
   }
   100% {
-    color: yellow;
+    color: palegreen;
   }
 }
 @keyframes colorlogo {
@@ -21,7 +21,7 @@
     transform: rotate(360deg);
   }
   80% {
-    color: #cc9966;
+    color: red;
     transform: scale(3);
   }
   100% {
