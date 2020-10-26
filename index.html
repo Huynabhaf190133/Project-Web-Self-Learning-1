@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animation.css" />
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="responsive.css" />
     <title>CMS</title>
   </head>
   <body>
-    <div class="container" style="min-height: 100vh;">
+    <div class="container" style="min-height: 100vh">
       <div class="left">
         <h3>CMS $$ PLUS</h3>
       </div>
@@ -26,36 +26,104 @@
             <form action="" method="POST" name="myform">
               <!--className of username-->
               <p class="username">UserName</p>
-              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person icon-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-person icon-person"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                />
               </svg>
               <!--Input account-->
-              <input class="user" name="user" type="text" placeholder="Tên tài khoản"/>
+              <input
+                onchange="test()";
+                maxlength="15"
+                class="user"
+                name="user"
+                type="text"
+                placeholder="Tên tài khoản"
+              />
+              <div class="txt1">
+                <p></p>
+              </div>
               <!--ClassName of password-->
               <p class="password">Password</p>
-              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-unlock-fill pass-word" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
-                <path fill-rule="evenodd" d="M8.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-unlock-fill pass-word"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M8.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"
+                />
               </svg>
               <!--Input of password-->
-              <input class="pass" name="pass" type="password" placeholder="Mật khẩu" />
+              <input
+                minlength="6"
+                maxlength="20"
+                class="pass"
+                name="pass"
+                type="password"
+                placeholder="Mật khẩu"
+              />
+              <div class="txt2">
+                <p></p>
+              </div>
             </form>
             <div class="Event">
-              <button onclick="return check()">LOGIN</button>
-              <p><a href="#">Forget Password ?</a></p>
-              <a href="#">Sign Up</a>
+              <button onclick="check()">LOGIN</button>
+<!-- 
+              <style>
+                .forget {
+                  color: brown;
+                }
+                .signup {
+                  text-decoration: none;
+                  color: black;
+                  margin-left: 5px;
+                  padding-left: 8px;
+                  padding-right: 8px;
+                  padding-top: 3px;
+                  padding-bottom: 3px;
+                  border: 1px solid;
+                  border-radius: 5px;
+                  background: linear-gradient(
+                    90deg,
+                    rgba(131, 58, 180, 1) 0%,
+                    rgba(29, 253, 39, 0.9755252442773985) 50%,
+                    rgba(252, 176, 69, 1) 100%
+                  );
+                }
+              </style> -->
               <br />
               <br />
-              <h4>OR > Sigitgn In</h4>
-              <br>
-              <h1 style="color: #FF0000;">With</h1>
-              <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-              <a href=""><img src="img/gmail.png" alt=""></a>
+              <a href="#" class="forget">Forget Password ?</a>
+              <br><br>
+              <a href="#" class="signup">Sign Up</a>
+              <br />
+              <br />
+              <h4>OR > Sign In</h4>
+              <br />
+              <h1 style="color: #ff0000">With</h1>
+              <a href="#"><img src="img/facebook.png" alt="facebook" /></a>
+              <a href=""><img src="img/gmail.png" alt="" /></a>
             </div>
           </div>
-        </div> 
-      </div>
         </div>
-        <script src="script.js"></script>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

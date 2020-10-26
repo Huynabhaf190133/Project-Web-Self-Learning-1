@@ -3,9 +3,9 @@ function check()
 {
     let a = document.forms["myform"]["user"].value;
     let b = document.forms["myform"]["pass"].value;
-    if(a||b=="")
+    if(a&&b=="")
     {
-        alert("Tài khoản không được để trống");
+        alert("Vui lòng nhập đầy đủ thông tin !");
     }
     else
     {
@@ -14,6 +14,19 @@ function check()
 }
 
 
+
+function test()
+{
+  var a;
+  if(a.test==true)
+  {
+    console.log("ok");
+  }
+  else
+  {
+    console.log("ngu");
+  }
+}
 
 
 
