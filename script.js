@@ -1,9 +1,9 @@
 
 function check()
 {
-    let a = document.getElementsByClassName("user");
-    let b = document.getElementsByClassName("pass");
-    if(a=null)
+    let a = document.forms["myform"]["user"].value;
+    let b = document.forms["myform"]["pass"].value;
+    if(a||b=="")
     {
         alert("Tài khoản không được để trống");
     }
@@ -12,6 +12,16 @@ function check()
         alert("Đăng nhập thành công");
     }
 }
+
+
+
+
+
+
+
+
+
+
 function clicktobay() 
 {
   var person=prompt("Nhập tên của bạn :");  
